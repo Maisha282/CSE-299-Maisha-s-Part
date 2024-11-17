@@ -1,0 +1,207 @@
+/* Full-page background */
+body {
+    background-image: url('images2.avif');
+    background-color: #e3f2fd;
+    /* Light sky blue background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chat container styling */
+.chat-container {
+    width: 600px;
+    height: 700px;
+    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.95);
+    /* Slightly translucent white */
+    border-radius: 10px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Chat header styling */
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a3e6a;
+    /* Deep navy blue */
+    color: white;
+    padding: 25px 20px 15px 20px;
+    /* Added more padding at the top */
+    border-radius: 8px 8px 0 0;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+/* Logo styling */
+.nsu-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    object-fit: contain;
+    position: relative;
+    top: 10px;
+    /* Lowered the logo a bit more */
+}
+
+/* Title styling */
+.chat-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    position: relative;
+    top: 5px;
+    /* Kept this slight adjustment for balance */
+}
+
+
+/* Chat box for displaying messages */
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 550px;
+    margin-bottom: 10px;
+    background-color: #e3f2fd;
+    /* Soft blue */
+}
+
+/* Typing indicator */
+.typing-indicator {
+    display: none;
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    margin: 5px 0;
+}
+
+/* Scroll-to-Top Button */
+.scroll-top-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    background-color: #006a8e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: none;
+}
+
+/* Chat input and buttons */
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6f2ff;
+}
+
+.chat-input-container input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #a1c6e7;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #ffffff;
+}
+
+/* Buttons - all shades of blue */
+.chat-input-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 120px;
+}
+
+.send-btn {
+    background-color: #4a90e2;
+    /* Modern blue */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #357ABD;
+    /* Darker shade on hover */
+}
+
+.clear-btn {
+    background-color: #5b9bd5;
+    /* Light blue */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.clear-btn:hover {
+    background-color: #357ABD;
+    /* Darker shade on hover */
+}
+
+/* User and assistant messages */
+.user-message,
+.assistant-message {
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 75%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* User message */
+.user-message {
+    background-color: #005a92;
+    /* Deep blue for user */
+    color: white;
+    align-self: flex-end;
+}
+
+/* Assistant message */
+.assistant-message {
+    background-color: #d1e3f0;
+    /* Icy blue for assistant */
+    color: #333;
+    align-self: flex-start;
+}
+
+/* Download Button */
+.download-btn {
+    background-color: #4a90e2;
+    /* Same modern blue as send button */
+    color: white;
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background-color: #357ABD;
+    /* Darker shade on hover */
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSU Chat Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="static/images/nsu_logo.png" class="nsu-logo" alt="NSU Logo">
+            <h1 class="chat-title">NSU Chat Assistant</h1>
+        </div>
+
+        <div class="chat-box" id="chat-box"></div>
+        <div class="typing-indicator" id="typing-indicator">Bot is typing...</div>
+
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-btn" class="send-btn">Send</button>
+            <button id="clear-btn" class="clear-btn">Clear Chat</button>
+            <button id="download-btn" class="download-btn">Download Chat</button> <!-- New download button -->
+        </div>
+
+        <button id="scroll-top-btn" class="scroll-top-btn">⬆ Scroll to Top</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
